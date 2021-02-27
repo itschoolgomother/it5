@@ -1,0 +1,36 @@
+
+#hero{
+	height: 200px;
+	width: 205px;
+	background-color: rgb(250, 55, 0);
+	position: absolute;
+	border-radius: 45%;
+
+}
+#coin{
+	height: 50px;
+	width: 152px;
+	background-color: blue;
+	position: absolute;
+}body{
+	background: green;
+}
+#sc{
+	width: 50px;
+	height: 30px;
+	border: 1px solid white;
+	color: white;
+}
+#maxina{
+	width: 100px;
+	position: absolute;
+	top: 40px;
+	left: 300px;
+}
+#restart{
+	width: 150px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	display: none;
+}

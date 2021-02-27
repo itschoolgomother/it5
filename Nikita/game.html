@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+			<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+	<img src="person.png" width="300px" id="person">
+	<img src="coin.png" id="coin"> 
+		<script type="text/javascript">
+			let x = 75;
+			let y = 50;
+			let buttonLeft =  false;
+			let buttonRight = false;
+
+			document.addEventListener("keydown", Pressed, false); 
+			document.addEventListener("keyup", UnPressed, false);
+
+			function Pressed(e) {
+				if (e.keyCode == 68) {
+					buttonRight = true  
+				}
+				if (e.keyCode == 65) {
+					buttonLeft = true  
+				}
+			}
+
+			function UnPressed(e) {
+			if (e.keyCode == 68){
+				buttonRight = false;
+			}	
+
+			if (e.keyCode == 65){
+				buttonLeft = false;
+			}
+
+			}
+
+			function Game() {
+				if (buttonRight) {
+					x = x+5;
+					person.style.left = x+"px"
+			}
+				if (buttonLeft) {
+					x = x-5;
+					person.style.left = x+"px"
+				}
+
+			requestAnimationFrame(Game)
+			}
+
+			requestAnimationFrame(Game)
+		</script>
+</body>
+</html>
