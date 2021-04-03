@@ -1,0 +1,28 @@
+
+*{
+	margin: 10px;
+		font-family: "Chilanka";
+}
+input[type="text"]{
+	background-color: lightgrey;
+	transition: 0.1s linear;
+}
+input[type="password"]{
+	background-color: lightgrey;
+}
+input[type="text"]:active{
+	box-shadow: 0px 0px 4px 3px grey;
+
+}
+
+body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+	height: 100vh;
+	flex-direction: column;
+}
+div{
+	border: 1px solid black;
+	border-radius: 5%;
+}

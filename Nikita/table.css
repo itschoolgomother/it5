@@ -1,0 +1,66 @@
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td{
+	border-bottom: 1px solid black;
+	padding: 10px 10px 20px 20px;
+
+}
+.box1{
+	background-color: darkgreen;
+	color: white;
+	font-weight: bold;
+
+}
+.box2{
+	background-color: lightblue;
+}
+h1{
+	font-size: 50px;
+	text-decoration: underline;
+	color: blue;
+	text-shadow: 10px 10px 0px darkblue,
+	20px 20px 1px darkgreen,
+	20px -20px 1px darkorange; 
+}
+.shadow{
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	box-shadow: 10px 10px 0px 0px black,
+	-10px -10px 1px 1px darkgrey,
+	10px -10px 1px 1px darkred,
+	-10px 10px 1px 1px darkblue;
+
+}
+.test{
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+	transform: skewY(-10deg);
+	transition: 1s linear;	
+}
+.test:hover{
+	box-shadow: 5px -5px 0px 0px lightblue,
+	10px -10px 0px 0px lightgrey,
+	15px -15px 0px 0px darkorange,
+	20px -20px 0px 0px darkblue;
+}
+img{
+	filter: sepia(100%);
+	transition: 0.8s linear;
+}
+img:hover{
+	filter: sepia(0);
+	transform: translateY(-50px);
+}
+body{
+	display: flex;
+	height: 200vh;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: space-between;
+}
+
+

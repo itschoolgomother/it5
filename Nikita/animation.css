@@ -1,0 +1,140 @@
+.box1{
+		animation-name: go;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	width: 150px;
+	height: 150px;
+	background-color: darkred;
+	border-left-style: black;
+}
+@keyframes go{
+	from{
+
+	}
+	to{
+		transform: rotate(360deg);
+		background-color: purple;
+		border-radius: 50%;
+	}
+}
+.box2{
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	animation: go1 5s infinite linear;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: auto 50px;
+}
+@keyframes go1{
+	25%{
+		background-color: darkgreen;
+		transform: rotate(360deg);
+		top: 0px;
+		left: 0px;
+	}
+	40%{
+		left: 0px;
+		top: 400px;
+		background-color: darkblue;
+	}
+	60%{
+		left: 400px;
+		top: 400px;
+		background-color: red;
+	}
+	80%{
+		left: 400px;
+		top: 0px;
+		background-color: yellow; 
+	}
+	100%{
+		left: 0px;
+		top: 0px;
+	}
+
+}
+.box3{
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	animation: go2 3s infinite linear;
+	position: absolute;
+
+}
+@keyframes go2{
+	from{
+
+	}
+	to{
+		transform: rotate(360deg);
+		background-color: purple;
+		border-radius: 50%;
+	}
+
+		25%{
+		background-color: darkgreen;
+		top: 0px;
+		left: 0px;
+	}
+	40%{
+		left: 0px;
+		top: 400px;
+		background-color: darkblue;
+	}
+	50%{
+		background-color: lime;
+	}
+
+	60%{
+		left: 400px;
+		top: 400px;
+		background-color: red;
+	}
+	80%{
+		left: 400px;
+		top: 0px;
+		background-color: yellow; 
+	}
+	100%{
+		left: 0px;
+		top: 0px;
+		transform: scale(3);
+	}
+}
+.box4{
+	width: 150px;
+	height: 150px;
+	animation: go3 7s infinite linear;
+	background-color: blue
+	border: 1px solid black;
+	position: absolute;
+	left: 500px;
+}
+@keyframes go3{
+
+	to{
+		text-shadow: 20px 20px 3px lime,
+		-48px -48px 6px red,
+		36px -36px 9px blue,
+		-60px 60px 12px pink;
+		font-size: 180px;
+	}
+	20%{
+		color: cyan;
+	}
+	40%{
+		color: blue;
+	}
+	60%{
+		text-decoration: underline;
+	}
+	80%{
+		font-weight: bold;
+	}
+	100%{
+		font-style: italic;
+	}
+}

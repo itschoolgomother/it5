@@ -1,0 +1,60 @@
+.container{
+	width: 70%;
+	height: 100vh;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+}
+body{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.box{
+	width: 20%;
+	height: 20%;
+	border: 1px solid black;
+	margin: 5px;
+	filter: sepia(90%);
+	transition: 1s linear;	
+}
+.box1{
+	background-image: url(img2.png);
+	background-size: cover;
+}
+.box2{
+	background-image: url(p1.png);
+	background-size: cover;
+}
+.box3{
+	background-image: url(Incrusio.png);
+	background-size: cover;
+}
+.box4{
+	background-image: url(img1.png);
+	background-size: cover;
+}
+.box5{
+	background-image: url(coin.png);
+	background-size: cover;
+}
+.box:hover{
+	filter: sepia(0%);
+	box-shadow:10px 10px 0px 0px grey;
+	transform: translateY(50px);
+}
+/*.box31,
+.box41,
+.box51,
+*/
+
+.btn{
+	height: 150px;
+	width: 150px;
+}

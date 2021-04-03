@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="canvas" width = 500 height = 500></canvas>
+<script type="text/javascript">
+let cnv = document.getElementById("canvas");
+let ctx = cnv.getContext("2d");
+let circles = [];
+
+circles[0] = {
+	x: Math.random()*cnv.width,
+	y: 0,
+	r: Math.random()*50+20,
+}
+
+function draw() {
+	ctx.clearRect(0,0,cnv.width,cnv.height)
+	for (let i = 0; i < circles.length; i++) {
+		ctx.fillStyle = "red";
+		ctx.arc(circles[i].x, circles[i].y, circles[i].r, 0, Math.PI*2);
+		ctx.fill();
+		circles[i].y++;
+		if (circles[i].y == cnv.height) {
+			circles.push({
+				x: Math.random()*cnv.width,
+				y: 0,
+				r: Math.random()*50+20,				
+			})
+		}
+	}
+	}
+setInterval(draw);
+
+
+    
+
+
+</script>
+</body>
+</html>

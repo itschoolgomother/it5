@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="canvas" width = 500 height = 500></canvas>
+<script type="text/javascript">
+let cnv = documet.getElementById("canvas");
+let ctx = cnv.getContext("2d");
+let circles [] 
+circles[0]{
+	x:Math.random()cnv.width,
+	y:0,
+	z:Math.random()*50+20 ,
+}
+function draw() {
+	for (let i = 0; i < circles.length; i++) {
+		ctx.fillStyle ="red";
+		ctx.arc(circles[i].x,circles[i].y,circles[i].r,0,Math.PI*2);
+		circles[i].y++
+	}
+	}
+setInterval(draw);
+
+    
+
+
+</script>
+</body>
+</html>

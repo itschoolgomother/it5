@@ -78,10 +78,30 @@ restart.onclick = function(){
 	function game(){
 		switch(score){
 			case 10:
+			if (edX>0) {
+				edX = 5;
+			} else{
+				edX= -5;
+			}
+			if (edY>0) {
+				edY = 5;
+			} else {
+				edY= -5;
+			}
 			coin.style.backgroundColor =  colors[0]
 			break;
 
 			case 20:
+			if (edX>0) {
+				edX = 10;
+			} else{
+				edX= -10;
+			}
+			if (edY>0) {
+				edY = 10;
+			} else {
+				edY= -10;
+			}
 			coin.style.backgroundColor = colors[1]
 			break;
 		} 
